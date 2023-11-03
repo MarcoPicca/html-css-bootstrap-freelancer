@@ -181,10 +181,13 @@
 }
 
 .main-main{
-    height: 650px;
+    height: 500px;
     background-color: #1abc9c;
     display: flex;
+}
 
+.btn-centered{
+    text-align: center;
 }
 
 .height-text-main{
@@ -194,6 +197,14 @@
 .footer-main{
     display: flex;
     justify-content: center;
+}
+
+#contact-me input,
+#contact-me textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
 }
 
 .height-form-footer-main{
