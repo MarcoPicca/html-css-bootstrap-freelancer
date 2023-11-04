@@ -107,7 +107,7 @@
 }
 
 .line_star_header-main{
-    width: 25%;
+    width: 20%;
     height: 1px;
     border-bottom: 3px solid black;
 }
@@ -120,12 +120,21 @@
     align-items: center;
 }
 
+.container-img{
+    height: 138px;
+    margin: 1rem 0;
+}
+
 .img_main{
     object-fit: contain;
     object-position: center;
-    height: 170px;
+    height: 138px;
     width: 100%;
-    margin: .3rem 0;
+    border-radius: 10px;
+}
+
+.marg-bott{
+    margin-bottom: 3rem;
 }
 
 .text-center{
@@ -134,32 +143,12 @@
     align-items: center;
 }
 
-.purple{
-    color: rgb(233, 7, 233);
-    background-color: rgb(233, 7, 233);
-}
-
-.pink{
-    background-color: pink;
-}
-
-.green{
-    background-color: greenyellow;
-}
-
-.aqua{
-    background-color: aqua;
-}
-
-.black{
-    background-color: black;
-}
-
 .jumbo{
     background-color: #1abc9c;
     height: 500px;
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .height-inside-jumbo{
@@ -170,20 +159,23 @@
     height: 80px;
 }
 
-.card-main-right{
-    display: flex;
-    justify-content: center;
-}
-
-.card-main-left{
+.card-main{
     display: flex;
     justify-content: center;
 }
 
 .main-main{
-    height: 500px;
+    height: auto;
     background-color: #1abc9c;
     display: flex;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+}
+
+.container-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn-centered{
@@ -192,11 +184,6 @@
 
 .height-text-main{
     height: 200px;
-}
-
-.footer-main{
-    display: flex;
-    justify-content: center;
 }
 
 #contact-me input,
@@ -220,14 +207,38 @@
 .height-header-footer{
     height: 150px;
     margin-bottom: 1rem;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .padd-top{
     padding-top: 1rem;
 }
 
+
+.big-container-icon-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-icon-footer{
+    height: 50px;
+    width: 50px;
+    border: solid 1px white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-right: .1rem;
+    margin: .4rem;
+}
+
 .footer-footer{
+    width: 100%;
     background-color: #2c3e50;
     display: flex;
     justify-content: center;
@@ -237,11 +248,21 @@
 
 .height-text-footer-footer{
     height: 30px;
+    text-align: center;
 }
 
+.copywrite{
+    font-size: 12px;
+    color: white;
+}
 
 
 
 
 /* MEDIA */
 
+@media screen and (min-width: 576px) {
+    .container-header-footer{
+        display: flex;
+    }
+}
